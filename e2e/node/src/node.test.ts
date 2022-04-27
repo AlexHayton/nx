@@ -363,12 +363,14 @@ describe('nest libraries', function () {
                 displayName: '${nestlib}',
                 preset: '../../jest.preset.ts',
                 globals: {
+                  // eslint-disable-next-line @typescript-eslint/naming-convention
                   'ts-jest': {
                   tsconfig: '<rootDir>/tsconfig.spec.json',
                   },
                 },
                 testEnvironment: 'node',
                  transform: {
+                // eslint-disable-next-line @typescript-eslint/naming-convention
                 '^.+\\.[tj]s$': 'ts-jest',
                 },
                 moduleFileExtensions: ['ts', 'js', 'html'],
